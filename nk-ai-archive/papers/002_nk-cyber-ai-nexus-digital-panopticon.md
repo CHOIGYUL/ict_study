@@ -99,6 +99,12 @@
 
 **내가 본 한계**
 - **핵심 기술 주장의 근거가 약함**: 'AI 말투 식별 90% 이상'과 TitaNet·T-vector 활용은 2차 자료 하나(38 North)에 기대고 있음. 실제 단말기에 탑재됐는지, 텍스트를 분류하는지 음성을 분류하는지, 어떤 조건에서 측정한 정확도인지 검증되지 않음. TitaNet은 본래 **화자 인식(speaker recognition)** 모델이라 '말투(방언) 분류'와 바로 같다고 보기 어려움. 연구 논문에서 쓰인 기술이 실제 배치된 시스템이라는 증거와 혼동될 위험이 있음
+- **인용한 1차 자료와 내용이 어긋남** (Project Reveal 원문과 대조, → [010](010_project-reveal-nk-digital-control.md))
+  - 'AI 말투 식별'은 Project Reveal에 전혀 나오지 않음. 이 주장의 근거는 38 North 기사뿐임
+  - '비둘기'(Pigeon)·'참매'(Chammae)를 본 논문은 학생들이 만든 인증 우회 프로그램으로 소개함. 반면 Project Reveal은 이를 기기 IMEI로 SELFSIGN 서명을 붙여 주는 Windows용 **서명 소프트웨어**로 분석했고, 개발 주체와 존재 이유는 "불분명"하다고 적음 (pp. 17–20). 실제 우회 사례로 든 것은 중국산 루팅 앱("Root 方手")을 USB로 설치하는 방식임
+  - 전자서명 체계: 기기가 직접 만든 SELFSIGN 파일도 통과하고, 검증에 실패한 파일은 '실행 차단'이 아니라 '삭제'됨. 이 서명 체계는 붉은별 OS가 아니라 안드로이드 기반 휴대폰에서 작동함
+  - 워터마크로 최초 유포자를 추적한다는 설명은 Project Reveal에 없음. 이 보고서는 비둘기가 붉은별 OS 워터마크(파일 끝의 "EOF" 표식)를 읽어 처리한다고만 씀
+  - '미궁', '3차원 체계', '10여 종', OS 업데이트 주기 6개월 단축은 Project Reveal이 아니라 데일리NK·RFA 보도에서 나온 내용임
 - **1차 자료가 없음**: 탈북민 인터뷰, 단말기 포렌식, 북한 AI 논문 원문 분석이 없음. 데일리NK·RFA 같은 소식통 보도에 기댄 부분이 많음
 - **전파 교란 서술의 근거가 약함**: 북한이 위성통신 교란에 '최신 AI 알고리즘'을 쓴다는 서술에 실증 근거가 거의 없음
 - **법에서 기술로 이어지는 연결이 추론에 머묾**: "법적 금지가 기술적 불가능으로 번역된다"는 주장은 시간 순서와 조항 대응에 기댄 해석임. 실제 구현 시점과 버전 정보로 검증되지 않음
@@ -115,7 +121,7 @@
 | Kim, Hyuk (2024.01). North Korea's Artificial Intelligence Research: Trends and Potential Civilian and Military Applications. *38 North* (부록 포함) | 말투 식별 AI 주장의 1차 출처. 북한 AI 논문을 분석한 내용과 부록을 직접 확인해야 함 | ✅ |
 | Kim, Hyuk (2024.08). North Korea's International Network for Artificial Intelligence Research. *38 North* | 북한 AI 논문의 해외 공저 네트워크 (최소 12개국) 분석. 과학계량 연구 아이디어의 출발점 | ✅ |
 | 38 North (2026.02). North Korea's Integration of AI Across Cyber, Economic, and Military Domains | 가장 최근의 종합 분석. IT 인력의 딥페이크 활용, AI 조직 신설 등 | ✅ |
-| Williams, M. & Schiess, N. (2022). *Project Reveal: New Research into North Korea's Digital Control System*. Lumen | 열람리력, 워터마크, 전자서명 등 단말기 통제를 기술적으로 분석한 1차 자료. 탈북민 10–30%가 탈옥(jailbreak)을 시도했다는 추정 포함 | ✅ |
+| Williams, M. & Schiess, N. (2022). *Project Reveal: New Research into North Korea's Digital Control System*. Lumen | 열람리력, 서명 체계(SELFSIGN/NATISIGN), 미래망 등 단말기 통제를 기술적으로 분석한 1차 자료. 탈북민 2명 인터뷰 포함 (루팅 시도: 한 명은 "일반인 10% 미만", 다른 한 명은 "아는 대학생 약 30%"로 추정한 개인 의견임). 본 논문 주장과 어긋나는 부분이 있음 → [010](010_project-reveal-nk-digital-control.md) | ✅ |
 | 38 North (2024.04). *Digital Surveillance in North Korea* 특별보고서 (한글판 PDF 있음) | 디지털 감시와 인적 감시가 결합하는 시나리오 분석 | ✅ |
 | Grunow, F. & Schiess, N. (2015). Lifting the Fog on Red Star OS. 32C3 | 붉은별 OS 워터마킹을 리버스 엔지니어링한 내용 | 📎 |
 | 최효정·도원영 (2024). 평양문화어보호법을 통해 본 북한의 언어 통제. 『한국어 의미학』 86, pp. 151–175 | 언어학 관점에서 '괴뢰말투'의 범주 분석. 판별기를 설계할 때 언어학적 근거가 됨 | 📎 |
